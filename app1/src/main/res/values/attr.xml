@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Used this file for changing the background color and textcolor-->
+<resources>
+    <declare-styleable name="dt">
+        <attr name="bgcolor" format="color"/>
+        <attr name="tC" format="color"/>
+    </declare-styleable>
+</resources>

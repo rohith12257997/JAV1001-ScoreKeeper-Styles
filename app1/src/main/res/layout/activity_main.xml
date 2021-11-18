@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+    <!--please add 11th line at line 7 to see the bg image this is taken out to
+    make difference of darkmode-->
+    <!--  android:background="@drawable/basketball_bg"-->
+
+
+    <!--Created a attr.xml file to give the textcolor and background color-->
+    <TextView
+        android:id="@+id/score_board_team_A"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="#F6F8F5"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textColor="?attr/tC"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@+id/name_team_a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <TextView
+        android:id="@+id/score_board_team_B"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="62dp"
+        android:background="#F6F8F5"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textColor="?attr/tC"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@+id/name_team_b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_1_team_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="276dp"
+        android:background="#6BBCE1"
+        android:onClick="setTeamA1"
+        android:text="@string/_1"
+        android:textColor="?attr/tC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button1_2_team_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="160dp"
+        android:background="#6BBCE1"
+        android:onClick="setTeamA2"
+        android:text="@string/_2"
+        android:textColor="?attr/tC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_3_team_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="52dp"
+        android:background="#6BBCE1"
+        android:onClick="setTeamA3"
+        android:text="@string/_3"
+        android:textColor="?attr/tC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_2_team_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="160dp"
+        android:background="#6BBCE1"
+        android:onClick="setTeamB2"
+        android:text="@string/_2"
+        android:textColor="?attr/tC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_3_team_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="52dp"
+        android:background="#6BBCE1"
+        android:onClick="setTeamB3"
+        android:text="@string/_3"
+        android:textColor="?attr/tC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_1_team_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="276dp"
+        android:background="#6BBCE1"
+        android:onClick="setTeamB1"
+        android:text="@string/_1"
+        android:textColor="?attr/tC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/name_team_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="428dp"
+        android:background="#F6F8F5"
+        android:text="@string/team_a"
+        android:textColor="?attr/tC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/score_board_team_A"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="@+id/score_board_team_A" />
+
+    <TextView
+        android:id="@+id/name_team_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="428dp"
+
+        android:background="#F6F8F5"
+        android:text="@string/team_b"
+        android:textColor="?attr/tC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/score_board_team_B"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/score_board_team_B" />
+
+    <!--Used this switch to change between darkmode and light mode-->
+    <Switch
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/bgcolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

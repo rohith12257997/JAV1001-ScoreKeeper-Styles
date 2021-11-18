@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+
+        <!-- Customize your Lighttheme here. -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="bgcolor" >#fff</item>
+        <item name="tC">#000</item>
+
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+
+        <!-- Customize your Darktheme here. -->
+
+        <item name="colorPrimary">#D6B145</item>
+        <item name="colorPrimaryDark">#D6B145</item>
+        <item name="colorAccent">#D6B145</item>
+        <item name="android:navigationBarColor">#D6B145</item>
+        <item name="bgcolor" >#000</item>
+        <item name="tC">#38A13D</item>
+
+
+
+    </style>
+
+</resources>
